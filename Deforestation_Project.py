@@ -1,4 +1,3 @@
-import sys
 # The Program Starts here..
 def Afforestation_or_Deforestation(First_Year,Last_Year):
     if First_Year > Last_Year :
@@ -18,6 +17,8 @@ def RateOfChange(Data1,Data2,Year1,Year2):
     else :
         print("There has been no change from",Year1,"to",Year2)
         
+
+        
 Forest_Name = input("Enter the Forest Name : ")
 print("Enter the number of trees in",Forest_Name,"in Year 1")
 Data1 = int(input("Input it here -> "))
@@ -30,7 +31,6 @@ Data7 = int(input("Enter the number of trees in Year 7 : "))
 Data8 = int(input("Enter the number of trees in Year 8 : "))
 Data9 = int(input("Enter the number of trees in Year 9 : "))
 Data10 = int(input("Enter the number of trees in Year 10 : "))
-
 print("                   YOUR FOREST RESULTS :               ")
 print("                   The",Forest_Name,"                   ")
 Afforestation_or_Deforestation(Data1,Data10)
