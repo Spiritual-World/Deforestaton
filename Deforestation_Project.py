@@ -18,14 +18,6 @@ def RateOfChange(Data1,Data2,Year1,Year2):
     else :
         print("There has been no change from",Year1,"to",Year2)
         
-
-def CheckUP(Data1,Data2,Data3,Data4,Data5,Data6,Data7,Data8,Data9,Data10):
-    if Data1 <= 0 or Data2 <= 0 or Data3 <= 0 or Data4 <= 0 or Data5 <= 0 or Data6 <= 0 or Data7 <= 0 or Data8 <= 0 or Data9 <= 0 or Data10:
-        print("SORRY, THIS IS NOT A FOREST")
-        print("           END OF PROGRAM          ")
-        sys.exit()
-    else :
-        print("                   YOUR FOREST RESULTS :               ")
 Forest_Name = input("Enter the Forest Name : ")
 print("Enter the number of trees in",Forest_Name,"in Year 1")
 Data1 = int(input("Input it here -> "))
@@ -39,8 +31,7 @@ Data8 = int(input("Enter the number of trees in Year 8 : "))
 Data9 = int(input("Enter the number of trees in Year 9 : "))
 Data10 = int(input("Enter the number of trees in Year 10 : "))
 
-CheckUP(Data1,Data2,Data3,Data4,Data5,Data6,Data7,Data8,Data9,Data10)
-
+print("                   YOUR FOREST RESULTS :               ")
 print("                   The",Forest_Name,"                   ")
 Afforestation_or_Deforestation(Data1,Data10)
 print("Note : We have compared first year with last year")
